@@ -8,15 +8,15 @@ This folder contains the MATLAB code that was used to run simulations and obtain
 
 ## Reproduce the figures using the available simulation data
 
-To plot fig. 2, fig. 3 or fig. 4 of the paper, set the folder "code_for_figures" as the Current Folder in MATLAB and run "plot_fig2", "plot_fig3" or "plot_fig4" in the Command Window to obtain the relevant figure. The simulation results stored in the sub-folders "fig2_data" and "fig3_and_fig4_data" will be used to reproduce the three figures of Section VI in the paper. 
+To plot fig. 2, fig. 3 or fig. 4 of the paper, set the folder "code_for_figures" as the Current Folder in MATLAB and run `plot_fig2`, `plot_fig3` or `plot_fig4` in the Command Window to obtain the relevant figure. The simulation results stored in the sub-folders "fig2_data" and "fig3_and_fig4_data" will be used to reproduce the three figures of Section VI in the paper. 
 
-Note that the scripts "plot_fig3" and "plot_fig4" re-define the variable target_decoding_prob (see line 27 of "plot_fig3" and line 22 of "plot_fig4"). This forces the scripts to plot the curves shown in fig. 3 and fig. 4 of the paper. If you wish to plot the curves for all considered values of target_decoding_prob, then:
-- Comment out line 27 of "plot_fig3" and line 22 of "plot_fig4".
-- Change line 25 of "plot_fig3" and line 20 of "plot_fig4" from "clear e_dest K target_decoding_prob" to "clear e_dest K".
+Note that the scripts `plot_fig3` and `plot_fig4` re-define the variable `target_decoding_prob` (see line 27 of `plot_fig3` and line 22 of `plot_fig4`). This forces the scripts to plot the curves shown in fig. 3 and fig. 4 of the paper. If you wish to plot the curves for all considered values of target_decoding_prob, then:
+- Comment out line 27 of `plot_fig3` and line 22 of `plot_fig4`.
+- Change line 25 of `plot_fig3` and line 20 of `plot_fig4` from `clear e_dest K target_decoding_prob` to `clear e_dest K`.
 
 ## Re-run the simulations to obtain the data needed for fig. 2
 
-If you do not want to use the readily available simulation results but you prefer to re-run the simulations in order to obtain the results shown in fig. 2, set the folder "code_for_simulations" as the Current Folder in MATLAB. Then run "run_simulations_for_fig2" in the Command Window.
+If you do not want to use the readily available simulation results but you prefer to re-run the simulations in order to obtain the results shown in fig. 2, set the folder "code_for_simulations" as the Current Folder in MATLAB. Then run `run_simulations_for_fig2` in the Command Window.
 
 A simulation, either for Random Linear Coding (RLC only) or for RLC with Syndrome Decoding (RLC with SD), runs 60,000 experiments. If you wish to increase or reduce this value, edit the MATLAB files "sim_intercept_RLC_only_for_fig2.m" (modify line 37) and "sim_intercept_RLC_with_SD_for_fig2.m" (modify line 39).
 
@@ -32,7 +32,7 @@ Move the top three files to the folder "code_for_figures\fig2_data\data_RLC_only
 
 ## Re-run the simulations to obtain the data needed for fig. 3 and fig. 4
 
-If you do not want to use the readily available simulation results but you prefer to re-run the simulations in order to obtain the results shown in fig. 3 *and* fig. 4, set the folder "code_for_simulations" as the Current Folder in MATLAB. Then run "run_simulations_for_fig3" in the Command Window.
+If you do not want to use the readily available simulation results but you prefer to re-run the simulations in order to obtain the results shown in fig. 3 *and* fig. 4, set the folder "code_for_simulations" as the Current Folder in MATLAB. Then run `run_simulations_for_fig3` in the Command Window.
 
 The script "run_simulations_for_fig3" is divided into three parts:
 
@@ -56,8 +56,10 @@ When execution of "run_simulations_for_fig3" has been completed, move the follow
 - data_RLC_K20_0p2.mat
 - theory_RLC_K20_N_values_lowres.mat
 - theory_RLC_K20_N_values_highres.mat
+
 to the folder "code_for_figures\fig3_and_fig4_data\data_RLC_only". Similarly, move the following three files:
 - data_RLC_SD_K20_L128_0p1.mat
 - data_RLC_SD_K20_L128_0p15.mat
 - data_RLC_SD_K20_L128_0p2.mat
+
 to the folder "code_for_figures\fig3_and_fig4_data\data_RLC_SD". The existing files will be overwritten. To plot fig. 3 and fig. 4 follow the instructions in Section 1 above.
