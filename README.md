@@ -1,8 +1,8 @@
-Content created by:
-Ioannis Chatzigeorgiou, Lancaster University, United Kingdom
-
 This repository contains the MATLAB code that was used to run simulations and obtain the results that are presented in figures 2, 3 and 4 of the paper:
 "The Impact of Partial Packet Recovery on the Inherent Secrecy of Random Linear Coding" by Ioannis Chatzigeorgiou, which will appear (or has appeared) in the Proceedings of the 95th IEEE Vehicular Technology Conference (IEEE VTC 2022 - Spring, Helsinki, Finland, 19-22 June 2022).
+
+Content created by:
+Ioannis Chatzigeorgiou, Lancaster University, United Kingdom
 
 ## Reproduce the figures using the available simulation data
 
